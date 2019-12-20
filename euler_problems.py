@@ -127,6 +127,21 @@ def problem5():
 				number+=20
 				divider = 20
 	return finalNum				
+		
+#problem 6 - sum square difference
+		
+def problem6():	
+	sumSquareList = []
+	squaredSumList = []
+	listOneHun = []
+	for i in range(101):
+		sumSquareList.append(i**2)
+	sumSquares = sum(sumSquareList)
+	for i in range(101):
+		squaredSumList.append(i)
+	squaredSum = sum(squaredSumList)**2
+	diff = squaredSum - sumSquares		
+	return diff
 							
 def main():
 	print("Awnser to Problem1 is " + str(problem1()))
@@ -134,6 +149,7 @@ def main():
 	print("Awnser to Problem3 is " + str(problem3()))
 	print("Awnser to Problem4 is " + str(problem4()))
 	print("Awnser to Problem5 is " + str(problem5()))
+	print("Awnser to Problem6 is " + str(problem6()))
 
 if __name__ == '__main__':
     main()
